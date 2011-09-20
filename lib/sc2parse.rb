@@ -1,3 +1,4 @@
+require 'pp'
 module SC2Parse
   autoload :BitStream, 'sc2parse/bitstream'
   autoload :SerialData, 'sc2parse/serial_data'
@@ -5,5 +6,7 @@ module SC2Parse
 end
 
 def sc2replay(file)
-  SC2Parse::Replay.new file
+  x = SC2Parse::Replay.new file
+  pp x
+  x
 end

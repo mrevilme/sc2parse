@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby
-
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
 require 'sc2parse'
 
-replay = sc2replay("/home/matthew/src/work/sc2challenge/sc2parse/test/fixtures/replay.sc2replay")
+replay = sc2replay("replay.sc2replay")
+puts replay
